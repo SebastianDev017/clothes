@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+*{
+    padding:0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contacto-contain{
+    background: #fff;
+    height: 25px;
+    color: black;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+.contacto-contain img{
+    height: 25px;
+    max-width: 100%;
+    width: auto;
+    display: flex;
+}
+.contacto-contain span{
+    display: flex;
+    font-family:"Poppins";
+}
+/*  header{
+
+}   */
+nav{
+    max-width: 100%;
+    width: 100%;
+    width: auto;
+    background: rgb(77, 77, 77);
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    justify-items: center;
+}
+nav img{
+    margin-top: 5px;
+    width: 260px;
+    height: 50px;
+}
+nav span{
+    line-height: 60px;
+    font-family: "Poppins";
+    color: #fff;
+    font-size: 24px;
+}
+nav .ul-bar{
+    display: table;
+    max-width: 100%;
+    height: auto;
+}
+nav .ul-bar .li-bar{
+    display: table-cell;
+    max-width: 100%;
+}
+nav .ul-bar .li-bar a{
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+    font-family: "Poppins";
+    max-width: 100%;
+    height: auto;
+    margin: 2px;
+    padding: 20px;
+    line-height: 60px;
+}
+.ul-bar-tiny{
+    display: none;
+}
+.li-bar-tiny{
+    display: none;
+}
+.shop{
+    background-image: url(img/background-principal.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 340px;
+}
+.contain-shop{
+    float: right;
+    margin: 8% 20%;
+    color: white;
+    font-family: "DM Sans";
+    font-size: 14px;
+    max-width: 100%;
+    height: auto;
+}
+.discount{
+    background: gray;
+    padding: 8px 15px;
+    border-bottom: 2px solid rgb(77, 77, 77);
+}
+.text-product{
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px;
+    font-family: "DM Sans";
+}
+.button-contain{
+    margin: 10px;
+    display: flex;
+}
+.button-contain a{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+}
+.button-contain button{
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    box-shadow: #000 0px 0px 2px 2px;
+    font-size: 16px;
+    font-family: "DM Sans";
+}
+button:hover{
+    box-shadow: rgb(78, 78, 78) 0px 0px 2px 2px;
+    transition-duration: 300ms;
+    letter-spacing: 1px;
+}
+.contain-1{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+.text-mas-vendido h1{
+    text-align: center;
+    font-family: "DM Sans";
+}
+.grid-mas-vendido{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 33.3%);
+}
+.vendido{
+    max-width: 75%;
+	display: flex;
+	flex-flow: column;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    color: rgb(0, 0, 0);
+    margin: 20px auto;
+}
+.vendido img{
+    max-width: 100%;
+    background-color: rgb(234, 234, 234);
+}
+.vendido span{
+    text-align: center;
+    font-family: "Poppins";
+    display: block;
+    font-size: 17px;
+    margin: 3px 0px;
+}
+.price{
+    color: gray; 
+    font-size: 15px;
+}
+.descuento{
+    font-size: 15px;
+}
+.contain-ubicacion{
+    height: auto;
+    display: flex;
+}
+.mapa{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    width: 40%;
+    margin: 10px 20px 10px 45px;
+}
+.contain-2{
+    height: auto;
+    max-width: 100%;
+    width: 100%; 
+    margin: auto;
+    float: left;
+    display: block;
+}
+.location a{
+    text-decoration: none;
+    color:rgb(95, 95, 95);
+}
+.location a:hover{
+    color: rgb(0, 0, 0);
+    transition-duration: 300ms;
+}
+.contain-zapatos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    max-width: 100%;
+    width: 50%;
+    float: right;
+    margin: 0px auto;
+
+}
+.zapatos{
+    display: flex;
+	flex-flow: column;
+    color: rgb(0, 0, 0);
+    float: right;
+    margin: auto;
+}
+.zapatos img{
+    max-width: 170px;
+    float: right;
+    height: 120px;
+    background: rgb(234, 234, 234);
+}
+.zapatos span{
+    text-align: center;
+    font-family: "Poppins";
+    display: block;
+    font-size: 17px;
+    margin: 3px 0px;
+    margin: auto;
+}
+.contain-about{
+    margin: 20px 0px 0px;
+    background-image: linear-gradient(rgb(0,0,0, .35), rgb(0,0,0, .35)), url(img/background-about.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center center;
+}
+.about{ 
+    float: left;
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 10%;
+    line-height: 25px;
+    color: white;
+}
+.about h1{
+    font-family: "DM Sans";
+    margin: 0px 0px 15px 0px;
+    font-size: 25px;
+}
+.about p{
+    font-family: "Poppins";
+    font-size: 16px;
+}
+.boton-derecho{
+    float: right;
+    max-width: 50%;
+    width: 50%;
+    display: flex;
+    height: auto;
+    margin-top: 15%;
+}
+.boton-derecho a{
+    margin: auto;
+}
+.boton-derecho button{
+    margin: auto;
+    height: 50px;
+    width: 160px;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    box-shadow: 0px 0px 6px 1px rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+}
+footer{
+ background:rgb(234, 234, 234);
+ height: 120px;
+ max-width: 100%;
+ width: 100%; 
+}
+.footer-container{
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+.footer-container span{
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+    margin: 10px auto 5px auto;
+    font-size: 20px;
+    font-family: "Poppins";
+    color: black;
+}
+footer ul{
+    display: table;
+    margin: auto;
+}
+footer li{
+    display: table-cell;
+}
+footer a{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+footer img{
+    display: flex;
+    height: auto;
+    width: 50px;
+}
+/*MEDIA QUERY 800PX PÁGINA PRINCIPAL*/
+@media screen and (max-width: 800px){
+    nav ul li a{
+        text-decoration: none;
+        max-width: 100%;
+        height: auto;
+        margin: 2px;
+        padding: 15px;
+        line-height: 60px;
+    }
+    .contain-shop{
+        float: right;
+        margin: 12% 10%;
+        font-size: 14px;
+        max-width: 100%;
+        height: auto;
+    }
+    .grid-mas-vendido{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 30%);
+        justify-content: center;
+    }
+    .vendido{
+        max-width: 100%;
+        display: flex;
+        margin: 20px auto;
+    }
+    .vendido img{
+        max-width: 80%;
+    }
+    .mapa{
+        display: flex;
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        margin: 10px 0px 10px 10px;
+    }
+    .contain-zapatos{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 180px);
+        max-width: 100%;
+        width: 100%;
+        float: right;
+        margin: 0px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .zapatos{
+        display: flex;
+        flex-flow: column;
+        float: right;
+        margin: 10px;
+        
+    }
+    .zapatos img{
+        max-width: 100%;
+        float: right;
+        height: auto;
+        width: 140px;
+        margin: auto;
+    }
+    .zapatos span{
+        text-align: center;
+        font-family: "Poppins";
+        display: block;
+        font-size: 17px;
+        margin: 3px 0px;
+    }
+    .about{ 
+        float: left;
+        max-width: 50%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 10%;
+        line-height: 25px;
+    }
+    .about h1{
+        font-family: "DM Sans";
+        margin: 0px 0px 15px 0px;
+        font-size: 25px;
+    }
+    .about p{
+        font-family: "Poppins";
+        font-size: 16px;
+    }
+    .boton-derecho{
+        float: right;
+        max-width: 50%;
+        width: 50%;
+        display: flex;
+        height: auto;
+        margin-top: 15%;
+    }
+    .boton-derecho a{
+        margin: auto;
+    }
+    .boton-derecho button{
+        margin: auto;
+        height: 50px;
+        width: 160px;
+        border: none;
+        color: rgb(0, 0, 0);
+        font-family: "Poppins";
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+/*MEDIA QUERY 680PX PÁGINA PRINCIPAL*/
+@media screen and (max-width: 650px){
+    nav img{
+    width: 220px;
+    height: 40px;
+    margin: 10px 0px;
+}
+    .contain-shop{
+        float: right;
+        margin: 12% 5%;
+        font-size: 12px;
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .grid-mas-vendido{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 30%);
+        justify-content: center;
+    }
+    .vendido{
+        max-width: 100%;
+        display: flex;
+        margin: 20px auto;
+    }
+    .vendido img{
+        max-width: 80%;
+    }
+    .mapa{
+        display: flex;
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .contain-ubicacion{
+        height: auto;
+        display: block;
+    }
+    .contain-zapatos{
+        display: none;
+    }
+    .about{ 
+        float: left;
+        max-width: 50%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 14%;
+        line-height: 25px;
+    }
+    .about h1{
+        font-family: "DM Sans";
+        margin: 0px 0px 15px 0px;
+        font-size: 25px;
+    }
+    .about p{
+        font-family: "Poppins";
+        font-size: 16px;
+    }
+    .boton-derecho{
+        float: right;
+        max-width: 50%;
+        width: 50%;
+        display: flex;
+        height: auto;
+        margin-top: 20%;
+    }
+    .boton-derecho a{
+        margin: auto;
+    }
+    .boton-derecho button{
+        margin: auto;
+        height: 50px;
+        width: 160px;
+        border: none;
+        color: rgb(0, 0, 0);
+        font-family: "Poppins";
+        font-size: 16px;
+        cursor: pointer;
+    }
+    nav .ul-bar{
+        display: none;
+    }
+    nav .ul-bar .li-bar{
+        display: none;
+    }
+    nav .ul-bar .li-bar a{
+        display: none;
+    }
+    .ul-bar-tiny{
+        display: table;
+    }
+    .li-bar-tiny{
+        display: table-cell;
+        padding: 0px;
+    }
+    .li-bar-tiny a{
+        display: flex;
+        padding:0px 6px;
+    }
+    .li-bar-tiny a img{
+        max-width: 100%;
+        width: 36px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 550px){
+    .li-bar-tiny a img{
+        max-width: 100%;
+        width: 28px;
+        height: auto;
+        margin: 14px 2px;
+    }
+    nav img{
+        width: 190px;
+        height: 36px;
+        margin: 10px 0px;
+    }
+    .contacto-contain{
+        height: 12px;
+        font-size: 8px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 20px;
+    }
+    .contacto-contain img{
+        height: 12px;
+        max-width: 100%;
+        width: auto;
+        display: flex;
+    }
+    .contain-shop{
+        float: right;
+        margin: 12% 2%;
+        font-size: 10px;
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .contain-shop span{
+        font-size: 14px;
+        margin-top: 2px;
+    }
+    .contain-shop button{
+        font-size: 14px;
+        width: 100px;
+    }
+    .contain-1 h1{
+        font-size: 23px;
+    }
+    .contain-1 span{
+        font-size: 12px;
+    }
+    .about h1{
+        font-size: 18px;
+    }
+    .about p{
+        font-size: 12px;
+    }
+    .contain-about{
+        height: 300px;
+    }
+    .contain-about button{
+        margin-top: 20px;
+        width: 120px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
+/*CATALOGO STYLE*/
+.contain-catalogo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 700px);
+    justify-content: center;
+    height: auto;
+}
+.catalogo-dama{
+    display:flex;
+    align-items: center;
+    margin: 10px;
+    flex-direction: column;
+}
+.catalogo-hombre{
+    display:flex;
+    align-items: center;
+    margin: 10px;
+    flex-direction: column;
+}
+.catalogo-niños{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    flex-direction: column;
+
+}
+.contain-catalogo img{
+    background-color: rgb(234, 234, 234);
+    height: auto;
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+}
+.contain-catalogo a{
+    display: block;
+    text-align: center;
+    font: 20px "Poppins";
+    color: black;
+    text-decoration: none;
+}
+.contain-catalogo img:hover{
+    padding: 8px;
+    transition-duration: 300ms;
+}
+
+/*MEDIA QUERY CATALOGO*/
+@media screen and (max-width: 680px){
+    .contain-catalogo a{
+        font-size: 16px;
+    }
+    .contain-catalogo{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 500px);
+        justify-content: center;
+        height: auto;
+    }
+    .contain-catalogo img{
+        height: auto;
+        display: flex;
+        max-width: 100%;
+        margin: auto;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 520px){
+    .contain-catalogo a{
+        font-size: 12px;
+    }
+    .contain-catalogo{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 350px);
+        justify-content: center;
+        height: auto;
+    }
+    .footer-container span{
+        font-size:16px;
+    }
+}
+/*CATALOGOS STYLE*/
+.contain-catalogo-compra{
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.contain-catalogo-compra .titulo-principal{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "DM Sans";
+    color: rgb(94, 94, 94);
+}
+.contain-catalogo-compra span{
+    font-family: "Poppins";
+}
+.catalogo-compra{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 180px);
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.producto-compra{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: auto;
+}
+.producto-nombre{
+    text-align: start;
+    font-family: "DM Sans";
+    color: rgb(94, 94, 94);
+    margin: 20px 10px 0px;
+}
+.producto-compra a{
+    margin: 10px 10px;
+    display: block;
+}
+.producto-compra img{
+    height: auto;
+    max-width: 140px;
+    display: block;
+}
+/*MEDIA QUERY DE LOS CATALOGOS EN LISTA 760PX*/
+@media screen and (max-width: 760px){
+    .catalogo-compra{
+        display: flex;
+    }
+    .producto-compra{
+        display: block;
+    }
+    .producto-nombre{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 640px) {
+    .catalogo-compra{
+        display: flex;
+    }
+    .producto-compra{
+        display: block;
+    }
+    .producto-nombre{
+        text-align: center;
+    font-size: 24px;
+    }
+    .producto-compra img{
+        height: auto;
+        max-width: 100px;
+        display: block;
+    }
+    .titulo-principal{
+        font-size: 24px;
+    }
+    .contain-catalogo-compra span{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .catalogo-compra{
+        display: flex;
+    }
+    .producto-compra{
+        display: block;
+    }
+    .producto-nombre{
+        text-align: center;
+    font-size: 20px;
+    }
+    .producto-compra img{
+        height: auto;
+        max-width: 75px;
+        display: block;
+    }
+    .titulo-principal{
+        font-size: 20px;
+    }
+    .contain-catalogo-compra span{
+        font-size: 12px;
+    }
+}
